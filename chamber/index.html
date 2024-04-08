@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Waldo Mauricio Balvin Cupen - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development, Waldo Mauricio Balvin Cupen, course assignment portal">
+    <meta name="author" content="Waldo Mauricio Balvin Cupen">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Waldo Mauricio Balvin Cupen - WDD 230 - Web Frontend Development">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development, Waldo Mauricio Balvin Cupen, course assignment portal">
+    <meta property="og:url" content="https://walmaubc.github.io/wdd230/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">     
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+<header>
+    <img src="images/logo-cieneguilla.png" alt="3C logo" width="100" height="50"> 
+    <h1>Cieneguilla Chamber of Commerce</h1>
+</header>
+    <button id="myButton" aria-label="open Navegation Menu"></button> 
+    <nav>
+        <ul class="nav-list">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+        </ul>
+    </nav> 
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width:500px)">
+            <source srcset="images/hero-medium.webp" media="(max-width:1000px)">
+            <img src="images/Cieneguilla-plaza.webp" alt="CelayaCityBall" width="1500" height="750">
+        </picture>
+    </div>
+    <div class="welcome-content">
+        <h2>Welcome to the Cieneguilla Chamber of Commerce in Lima, Peru</h2>
+        <p>Founded in 1994, the Cieneguilla Chamber of Commerce is an organization dedicated to promoting economic and business development in the district of Cieneguilla, Lima. Our goal is to support local entrepreneurs and professionals in enhancing their businesses and contributing to the sustainable growth of our community.</p>
+
+    </div>
+<main>
+    <section id="business-spotlights">
+        <h2>Business Spotlights</h2>
+        <p>Explore some of our standout members and their achievements. If you want to share your success story, reach out to us.</p>
+    </section>
+    
+
+    <section id="wheater">
+        <h2>Weather</h2>
+        <p>Today: Mostly sunny, with a high around 28°C (82°F). Light breeze from the southwest at 5-10 km/h.</p>
+        <p>Thursday Night: Clear skies, with a low near 14°C (57°F). Light southwesterly winds becoming calm later in the evening.</p>
+    </section>
+
+    <section id="community-info-event">
+        <h2>Community Events</h2>
+        <p>April 10: Cieneguilla Farmers' Market</p>
+        <p>April 15: District Cleanup Day</p>
+        <p>April 20: Cieneguilla Cultural Festival</p>
+    </section>
+
+    <section id="call-to-action">
+        <h2>Join Us</h2>
+        <p>Become a member of the Cieneguilla Chamber of Commerce and contribute to the growth of our vibrant business community.</p>
+        <a href="join.html" class="cta-button">Join Now</a>
+    </section>
+</main>
+
+     <footer>
+        <div class="social">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="fb icon" width="30" height="30">
+            </a>
+            <a href="https://twitter.com">
+                <img src="images/twitter.png" alt="twitter icon" width="30" height="30">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.png" alt="instagram icon" width="30" height="30">
+            </a>
+        </div>
+            <p> &copy; <span id="copyright-year">2024</span> <a>Waldo Mauricio Balvin Cupen</a> <a>WWD230</a></p>
+          <div id="lastModified"></div>
+     </footer>
+      <script src="scripts/getDates.js"></script>
+      <script src="scripts/hamburger.js"></script>
+   </body>
+   </html>

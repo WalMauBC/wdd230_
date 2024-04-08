@@ -1,0 +1,81 @@
+{
+    "weeks":[
+        {
+            "week": "week 1",
+            "links": [
+                {
+                    "url": "../week01/index-2.html",
+                    "title":"HG Layout"
+                },
+                {
+                    "url":"../week01/media-query.html",
+                    "title":"mQueries"
+                },
+                {
+                    "url":"../week01/chamber-site-plan.html",
+                    "title":"JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "week 2",
+            "links": [
+                {
+                    "url": "../week02/bom.html",
+                    "title":"Bom Activity"
+                },
+                {
+                    "url":"../week02/design.html",
+                    "title":"Design Activity"
+                }
+            ]
+        },
+        {
+            "week": "week 3",
+            "links": [
+                {
+                    "url": "../week03/bom.html",
+                    "title":"Bom Activity W03"
+                },
+                {
+                    "url":"../week03/lazyload.html",
+                    "title":"Lazy Load"
+                },
+                {
+                    "url":"../week03/responsive-images.html",
+                    "title":"Responsive Images"
+                }
+            ]
+        },
+        {
+            "week": "week 4",
+            "links": [
+                {
+                    "url": "../week04/image.html",
+                    "title":"Image Activity W04"
+                },
+                {
+                    "url":"../week04/tablebuild.html",
+                    "title":"Table-build"
+                },
+                {
+                    "url":"../week04/Form-start/index.html",
+                    "title":"Form Activity W04"
+                }
+            ]
+        },
+        {
+            "week": "week 5",
+            "links": [
+                {
+                    "url": "../week05/prophets.html",
+                    "title":"Prophets Activity"
+                },
+                {
+                    "url":"../week05/weather.html",
+                    "title":"Weather Activity"
+                }
+            ]
+        }
+    ]
+}

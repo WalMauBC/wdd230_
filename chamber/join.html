@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <meta name="author" content="Waldo Mauricio Balvin Cupen"/>
+    <meta property="og:title" content="Cieneguilla Chamber of Commerce Join page" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://assets-global.website-files.com/5b2aaa3968a87fd3c2c54b19/5d4854c6f0c5a7a9095f3bda_ORG__DSC3437.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://aiden-patterson.github.io/wdd230/chamber/"
+    />
+    <link rel="icon" href="images/favicon.ico" />
+    <meta
+      name="description"
+      content="Cieneguilla Chamber of Commerce page to join the chamber"
+    />
+    <title>Cieneguilla - Chamber of Commerce Join page</title>
+  </head>
+
+  <body>
+    <header>
+      <img class="logo" src="images/logo.webp" alt="logo" />
+      <h1>Cieneguilla, AR Chamber of Commerce</h1>
+      <button id="menu"></button>
+      <nav class="navigation">
+          <a href="index.html" class="link">Home</a>
+          <a href="discover.html" class="link">Discover</a>
+          <a href="directory.html" class="link">Directory</a>
+          <a class="current" href="join.html" class="link">Join Now</a>
+      </nav>
+    </header>
+
+    <main id ="join">
+      <form method="get" action="thankyou.html">
+        <fieldset>
+        <legend>Name</legend>
+        <label>First Name*<input type="text" name="fname" id="fname" required></label>
+        <label>Last Name*<input type="text" name="lname" id="lname" required></label>
+        <label>Title*<input type="text" name="title" id="title" pattern="[a-zA-Z -]{7,}" required></label>
+        </fieldset>
+        <fieldset>
+        <legend>Contact Information</legend>
+        <label>email<input type="email" name="email" id="email" placeholder="example@domain.com" required></label>
+        <label>Phone*<input type="tel" name="phone" id ="phone" placeholder="1231231234" required></label>
+        </fieldset>
+        <fieldset>
+        <legend>Membership Level</legend>
+        <label><input type="radio" id="np" value="np" name="membership">NP</label>
+        <label><input type="radio" id="bronze" value="bronze" name="membership">Bronze</label>
+        <label><input type="radio" id="silver" value="silver" name="membership">Silver</label>
+        <label><input type="radio" id="gold" value="gold" name="membership">Gold</label>
+      </fieldset>
+      <fieldset>
+        <legend>Description</legend>
+          <input type="text" name="desc" id="desc">
+        <input type="hidden" name="date" id="date">
+        </fieldset>
+        <input type="submit" value="Join Now">
+      </form>
+      
+      <div id="memberinfo">
+        <div class="card">
+          <h2>GOLD</h2>
+        </div>
+        <div class="card">
+          <h2>SILVER</h2>
+        </div>
+        <div class="card">
+          <h2>NP</h2>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="contact us">
+        <h2>Contact Us</h2>
+        <p>Email</p>
+        <p>Phone</p>
+        <p>Address</p>
+      </div>
+      <p>&copy; 2024 Chamber Website</p>
+    </footer>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentDate.js"></script>
+  </body>
+</html>

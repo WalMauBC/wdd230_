@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon&family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fff;
+  color: #2b2d42;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: #7D9C62;
+  color: #000;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 25px;
+}
+
+header img {
+  height: 60px;
+  margin-right: 20px;
+}
+nav {
+  background-color: #ffffff;
+  max-width: 800px;
+  margin: auto; 
+  margin-top: 0px;
+  display: flex;
+  justify-content: center; 
+  
+}
+nav ul {
+  list-style-type: none; 
+  display: flex; 
+  
+  flex-direction: column;  
+  align-items: center; 
+  padding: 0;
+}
+
+nav li {
+  margin-bottom: 10px; 
+}
+
+nav a {
+  display: block; 
+  text-decoration: none; 
+  color: #2b2d42; 
+  font-weight: bold;
+  padding: 10px;
+
+}
+
+nav a:hover {
+  background-color: #7BB844;
+}
+
+nav .active {
+  background-color: #7BB844;
+}
+
+#myButton::before {
+  content: "☰";
+}
+
+#myButton.open::before {
+  content: 'X';
+}
+
+#myButton {
+  font-size: 1.3rem;
+  background-color: #FFFFFF;
+  color: #D90429;
+  position: absolute;
+  top: 5rem;
+  left: 1.5rem;
+  border: none;
+  cursor: pointer;
+  width: 0.5rem;
+  height: 0.5rem;
+  text-align: left;
+  padding: 0;   
+}
+
+main {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px; 
+  box-sizing: border-box;
+  display: flex; 
+  flex-wrap: wrap; 
+}
+
+#cieneguilla-photo {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#cieneguilla-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero {
+  display: block;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  
+}
+
+.welcome-content {
+  background-color:#7DA558;
+  color: #fff;
+  width: 80%;
+  text-align: center; 
+  padding: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+section {
+  background-color: #7DA558;
+  border-style: outset; 
+  margin: 0px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  padding: 20px;
+  background-color: #7E926C;
+}
+
+nav ul.open {
+  display: flex;
+}
+
+
+/* Estilos generales */
+
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+}
+
+aside {
+  /* Estilos para la barra lateral */
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  background-color: #2b2d42;
+  color: #000;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+}
+
+aside section {
+  margin-bottom: 50px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #edf2f4;
+  width: auto;
+}
+
+aside .calendar {
+ text-align: center;
+ width: 200px;
+}
+
+.image-container {
+  /* Estilos para contener las imágenes locales */
+display: grid;
+width: 100%;
+}
+
+.image-container img {
+  margin-bottom: 20px; /* Espacio entre las imágenes verticalmente */
+  background: #000;
+  animation: fade 10s;
+}
+ol {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(7,1fr)
+}
+
+.first-day {
+  grid-column-start: 5;
+}
+img{
+  
+}
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+  
+}
+img.rocorn {
+  transition: border-radius 0.3s; /* Agrega una transición para suavizar el cambio */
+}
+
+/* Estilos para las imágenes con la clase 'rocorn' cuando se pasa el cursor sobre ellas */
+img.rocorn:hover {
+  border-radius: 15px 150px; /* Aplica el efecto de esquina redondeada cuando se pasa el cursor sobre la imagen */
+}
+
+/* Estilos para el formulario */
+
+:root {
+  --primary-color: #2b2d42;
+  --secondary-color: #edf2f4;
+  --form-border-radius: 5px;
+}
+
+
+form {
+  background-color: var(--secondary-color);
+  border-radius: var(--form-border-radius);
+  padding: 40px;
+  border: 2px solid var(--primary-color);
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+form input[type="submit"] {
+  background-color: #68A4A6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+  background-color: #68A4A6;
+}
+
+
+/* Estilos para el formulario */
+.form-container {
+  max-width: 600px;
+  margin-right: 20px; /* Espacio entre el formulario y los beneficios */
+}
+
+/* Estilos para los beneficios del nivel de membresía */
+.benefits-container {
+  flex-grow: 1; /* Para que ocupe el espacio restante */
+}
+
+.membership-level {
+  margin-bottom: 20px;
+}
+
+.membership-level h3 {
+  margin-bottom: 10px;
+}
+
+.membership-level ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.membership-level ul li {
+  margin-bottom: 5px;
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 768px) {
+  main {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .form-container {
+      width: calc(50% - 10px); /* El ancho es la mitad del contenedor menos el espacio entre columnas */
+  }
+
+  .benefits-container {
+      width: calc(50% - 10px); /* El ancho es la mitad del contenedor menos el espacio entre columnas */
+      margin-left: 20px; /* Espacio entre los beneficios y el formulario */
+  }
+}
