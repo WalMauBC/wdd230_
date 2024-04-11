@@ -1,99 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Waldo Mauricio Balvin Cupen - WDD 230 - Web Frontend Development</title>
-    
-    <meta name="description" content="WDD 230 - Web Frontend Development. Waldo Mauricio Balvin Cupen's course assignment portal.">
+    <title> Waldo Mauricio Balvin Cupen - WDD 230 - Web Frontend Development </title>
     <meta name="author" content="Waldo Mauricio Balvin Cupen">
-
+    <meta name="description" content="Waldo Mauricio Balvin Cupen - WDD 230 - Web Frontend Development - course assignment portal">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
-   
-     <!-- Open Graph meta properties -->
-     <meta property="og:title" content="Waldo Mauricio Balvin Cupen - WDD 230 - Web Frontend Development">
-     <meta property="og:type" content="website">
-     <meta property="og:image" content="https://example.com/your-image.jpg"> <!-- Replace with the absolute URL of your image -->
-     <meta property="og:url" content="https://example.com/index.html"> <!-- Replace with the canonical URL of your page -->
-     
-
-    
+    <link rel="icon" href="favicon.ico" />
+    <meta property="og:title" content="Waldo Mauricio Balvin Cupen  Home Page">
+    <meta property="og:type" content="Home page for week02 activity">
+    <meta property="og:image" content="/images/picture-profile-web-front-end.jpeg">
+    <meta property="og;url" content="https://walmaubc.github.io/wdd230/">
 </head>
-
-
 <body>
-
     <header>
         <img src="images/waldo.jpg" alt="Waldo Balvin" width="75" height="100">
-        <h1 class="text-secondary">Waldo Mauricio Balvin Cupen</h1>
+        <span>Waldo Mauricio Balvin Cupen</span>
     </header>
+    
+    
     <nav>
-        <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="">Site Plan</a></li>
-            <li><a href="form" target="_blank">Form</a></li>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" class="active" title="Home">Home</a></li>
+            <li><a href="./week01/chamber-site-plan.html" title="Chamber">Chamber</a></li>
+            <li><a href="#" title="Site Plan">Site Plan</a></li>
+            <li><a href="#" title="Form">Form</a></li>
         </ul>
     </nav>
-
     <main>
+    <div class="hero">
+        <picture>
+            <source src="./images/lima-temple.jpg" media="(max-width: 600px)" class="temple-image" >
+            <img src="./images/lima-temple.jpg" alt="Cieneguilla Temple" class="temple-image" width="600" height="400">
+        </picture>
+        
+    </div>
 
-        <div class="hero">
-            <picture>
-              <source srcset="images/hero-small.webp" media="(max-width: 400px)">
-              <img src="images/lima_peru_temple_lds.webp" alt="Lima Temple." width="960"
-                height="480">
-            </picture>
-          </div>
-
-        <h1>WDD 230: Web Frontend Development</h1>
+        <h1>WDD 230: Web Frontend Development </h1>
         <div class="sections-container">
-            <section>
-                <h2 class="card">Learning Activities</h2>
-                <ul>
-                    <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week01/site-plan">Site Plan</a></li>
+        <section class="card">
+            <h2 class="card">Learning Activities</h2>
+            <ul>
+
+                <li>Week 01: <a href="week01/holygrail.html">Layout</a> | <a href="week01/media-query.html">Media Query</a> | <a href="week01/site-plan">Site Plan</a></li>
                     <li>Week 02: <a href="#">Design Principles</a> | <a href="#">Hamburger Menu </a> | <a href="#">DOM Manipulation </a></li>
                     <li>Week 03: <a href="week03/images/landscape.webp"> WebP </a></li>
                     <li>Week 04: <a href="#">  </a></li>
                     <li>Week 05: <a href="#">  </a></li>
-                </ul>
-            </section>
 
-            <section>
-                <h2 class="card">Information</h2>
-                <h2>Information</h2>
-                <label>Please enter your city for your weather information:</label>
-                <br>
-                <input type="text" id="city">
-                <input type="button" id="getData" value="Search">
-                <div class="weather-div">
-                    <img id="icon-weather" class="icon-weather">
-                    <p id="temperature" class="center"> <p id="description-weather" class="center"></p></p>
-                </div>
-                <div class="">
-                    <span class="size">Number of visits: <span id="visits" class="size"></span> </span>
-            </section>
-
-            
-        </div>
-    </main>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28668.320930451555!2d-76.82634832051649!3d-12.113924422422802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105eab3d4e74aa1%3A0x2af55f37e980da26!2sCieneguilla!5e1!3m2!1ses-419!2spe!4v1710651762855!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </ul>
+        </section>
+        <section class="card information">
+            <h2>Information</h2>
+            <label>Please enter your city for your weather information:</label>
+            <br>
+            <input type="text" id="city">
+            <input type="button" id="getData" value="Search">
+            <div class="weather-div">
+                <img id="icon-weather" class="icon-weather">
+                <p id="temperature" class="center"> <p id="description-weather" class="center"></p></p>
+            </div>
+            <div class="">
+                <span class="size">Number of visits: <span id="visits" class="size"></span> </span>
+            </div>
+        </section>
+        
+    </div>
+    <div class="center">
+        <section class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28668.320930451555!2d-76.82634832051649!3d-12.113924422422802!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105eab3d4e74aa1%3A0x2af55f37e980da26!2sCieneguilla!5e1!3m2!1ses-419!2spe!4v1710651762855!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
-
+        </section>
+    </div>
+    </main>
     <footer>
-        <span>Copyright &copy; Waldo Mauricio Balvin Cupen | All rights reserved</span>   
+        <p> &copy; 2024 Jose Emilio Zamarron Sanchez - Mexico - </p>
+        <p id="lastModified"></p>
     </footer>
-    <script src="scripts/getDates.js"></script> 
-    <script src="scripts/visits.js"></script>
-     
+<script src="./scripts/getDates.js"></script>
+<script src="./scripts/"></script>
 </body>
 </html>
